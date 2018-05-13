@@ -167,6 +167,10 @@ img{
     text-align: center;
     margin-top: 20px;
   }
+  
+   .contact-info ul{
+    margin-right: 40px;
+  }
 
   .social-top {
     text-align: center;
@@ -416,7 +420,7 @@ br{
     padding: 80px 0;
   }
   .fra-homem{
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 
   .titleh2{
