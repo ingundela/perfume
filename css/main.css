@@ -63,7 +63,7 @@ img{
 
 .header-top .logo span{
   font-family: 'Arizonia', cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -99,8 +99,6 @@ img{
   border-radius: 50%;
 }
 
-
-
 .navbar {
   background-color: #000;
 }
@@ -115,12 +113,31 @@ img{
     color: #999999;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    margin: 0 20px;
     text-transform: uppercase;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     transition: all .5s ease;
 }
+
+.navbar-toggler span {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.navbar-toggler-icon .navbar-collapse:hover,
+.navbar-toggle-icon .navbar-collapse:focus {
+  background-color: #fff!important;
+  color: #fff!important;
+}
+
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #fff;
@@ -131,6 +148,40 @@ img{
     color: #fff;
     font-weight: 400;
 }
+
+/*-- Meida Quiries --*/
+@media screen and (max-width: 768px) {
+  .header-top .logo h1{
+    font-size: 1.3rem;
+  }
+
+  .header-top .logo span{
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .header-top ul{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-top {
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 25px;
+  }
+
+  .social-top li{
+    display: inline-block;
+    margin:0 20px;
+    cursor: pointer;
+  }
+
+}
+
 
 /*-- HERO--*/
 .hero-image{
@@ -203,6 +254,55 @@ button > a:hover{
   color: #fff;
 }
 
+/*-- Meida Quiries --*/
+@media screen and (max-width: 768px) {
+  .hero-image{
+    padding: 0px;
+  }
+
+  .hero-left{
+    text-align: center;
+    margin: 20px auto;
+    padding-left: 10px;
+  }
+
+  .hero-left > span{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-left h2{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hero-left p{
+    max-width: 40rem;
+    text-align: center;
+    margin: 10px auto;
+    padding: 0px 0;
+    font-size: 0.4rem;
+  }
+
+  button{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 15px 0;
+    padding: 15px 0;
+  }
+
+  .probtn{
+    border: 1px solid #000;
+  }
+
+  .w-100 {
+    width: 100%!important;
+    height: 200px !important;
+  }
+
+}
+
 /*--whayus--*/
 .whayUs{
   padding: 40px 0;
@@ -239,6 +339,13 @@ br{
   font-family: 'Raleway', sans-serif;
 }
 
+@media screen and (max-width: 768px){
+
+  .whayUs{
+    display: none;
+  }
+}
+
 /*--aboutus--*/
 
 .aboutUs{
@@ -254,6 +361,21 @@ br{
   padding: 0 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .aboutUs{
+    padding: 80px 0;
+  }
+
+  .aboutUs .left{
+    border-right: none;
+  }
+
+  .aboutUs p{
+    padding: 0 10px;
+    text-align: justify;
+  }
+}
+
 /*--mulher--*/
 
 .mulher{
@@ -265,7 +387,7 @@ br{
   color: rgba(12, 12, 23, 0.9);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .65em;
   margin-bottom: 10px;
@@ -286,6 +408,24 @@ br{
 .sobre-perfume h5{
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 768px){
+
+  .mulher{
+    padding: 80px 0;
+  }
+  .fra-homem{
+    font-size: 0.4rem;
+  }
+
+  .titleh2{
+    font-size: 2.5rem;
+  }
+
+  .mulher .box1{
+    margin-bottom: 30px;
+  }
 }
 
 /*--break--*/
@@ -316,7 +456,6 @@ br{
     text-align: center;
 }
 
-
 .hero-caption > h3{
     font-size: 2.6rem;
     padding-top: 400px;
@@ -327,6 +466,7 @@ br{
     color: #b39964;
     z-index: 3;
 }
+
 
 .hero-caption >span {
     font-size: 1rem;
@@ -401,6 +541,36 @@ br{
   font-style: normal;
 }
 
+@media screen and (max-width: 768px) {
+    .hero-caption > h3{
+      font-size: 2rem;
+  }
+
+
+  .hero-caption >span {
+      font-size: 0.8rem;
+  }
+
+
+  .hero-caption > a {
+      font-size: 0.5rem;
+  }
+
+  .break-right .serviços{
+    padding-top: 50px;
+  }
+
+  .col1, .col2{
+    padding:20px 20px;
+    margin-top: none;
+  }
+
+  .break{
+    padding-bottom: 20px;
+  }
+
+}
+
 /*--FOOTER--*/
 
 .footer{
@@ -463,7 +633,23 @@ br{
   padding-top: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer{
+    padding: 70px 0;
+  }
 
+  .footer-left{
+    border-right: none;
+    margin-bottom: 20px;
+  }
 
+  .footer h3{
+    font-size: 1.5rem;
+  }
+  
+  .footer-last p{
+   font-size: 0.5rem;
+  }
 
+}
 
