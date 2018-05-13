@@ -168,10 +168,10 @@ img{
     margin-top: 20px;
   }
   
-   .contact-info ul{
-    margin-right: 40px;
+   .contact-info {
+    display: none;
   }
-
+    
   .social-top {
     text-align: center;
     margin: 0 auto;
