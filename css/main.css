@@ -24,6 +24,17 @@ img{
     text-align: center;
 }
 
+/*--Se der algum erro ao fazer o display da imagem--*/
+img::after {
+  content: "Desculpe, algo deu errado...";
+  font-size: 0.5rem;
+  margin-left: 1rem;
+  padding: 0.7rem;
+  background-color: lightgrey;
+  border-radius: 1rem;
+  box-shadow: 0px -2px 0px grey; 
+}
+
 .titleh2 {
   font-family: 'Playball', cursive;
   font-size: 3rem;
@@ -171,7 +182,7 @@ img{
    .contact-info {
     display: none;
   }
-    
+
   .social-top {
     text-align: center;
     margin: 0 auto;
@@ -397,10 +408,6 @@ br{
   margin-bottom: 10px;
 }
 
-.first{
-  margin-top: 20px;
-}
-
 .second{
   margin-top: 40px;
 }
@@ -409,9 +416,67 @@ br{
   margin-top: 10px;
 }
 
+.box1{
+  margin: 20px 0;
+}
+
+.thum-image{
+    width: 210px;
+    height: 210px;
+    margin-left: 15px;
+    position: relative;
+    line-height: 108px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box1 .model{
+  font-size: 0.8rem;
+  color: #1a1a1a;
+  display: block;
+  padding: 5px 0;
+}
+
 .sobre-perfume h5{
   text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.box1 .price{
+  font-size: 23px;
+  color: #333;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+}
+
+.mulher > button{
+  margin-top: 50px;
+  color: #000;
+  background: transparent;
+  border: 1px solid #000;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  
+}
+
+.mulher a{
   font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.mulher a:hover{
+  color: #fff;
+}
+
+.mulher > button:hover{
+  color: #fff;
+  background: #000;
 }
 
 @media screen and (max-width: 768px){
@@ -429,6 +494,16 @@ br{
 
   .mulher .box1{
     margin-bottom: 30px;
+  }
+
+  .thum-image{
+    width: 210px;
+    height: 210px;
+    margin-left: 59px;
+    position: relative;
+    line-height: 108px;
+    text-align: center;
+    overflow: hidden;
   }
 }
 
@@ -448,10 +523,6 @@ br{
     z-index: 1;
     display: flex;
     align-items: center;
-}
-
-.break-left, .break-right{
-  padding: 0;
 }
 
 .hero-caption{
@@ -517,6 +588,10 @@ br{
 
 .break-right .serviços{
   padding-top: 85px;
+}
+
+.break-right .do-break{
+  margin-bottom: 5px;
 }
 
 .col1, .col2{
@@ -656,4 +731,17 @@ br{
   }
 
 }
+
+/*===================================== FEMININO ===========================================*/
+
+.mulheres{
+  padding: 120px 0;
+}
+
+.col-box{
+  margin: 30px 0;
+}
+
+
+
 
