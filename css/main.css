@@ -218,7 +218,7 @@ img::after {
 
 .hero-left{
   padding-left: 100px;
-  margin-top: 85px;
+  margin-top: 20px;
 }
 
 .hero-right{
@@ -235,38 +235,52 @@ img::after {
 
 .hero-left p{
   max-width: 40rem;
-  padding: 10px 0;
+  padding: 20px 0;
+  line-height: 2.7;
   color: rgba(12, 12, 23, 0.9);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .65em;
 }
 
-button{
-  font-size: 1.3rem;
+.button-frt, .button-sec{
+  font-size: 1rem;
+  letter-spacing: 3px;
   text-transform: uppercase;
   margin-right: 20px;
-}
-
-button > a{
-  text-decoration: none;
-  padding: 25px 20px;
+  background: transparent;
+  border: 1px solid #000;
+  font-weight: 400;
   color: #000;
-  letter-spacing: 3px;
+  cursor: pointer;
+  padding: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-button > a:hover{
+.button-frt:hover, .button-sec:hover{
   text-decoration: none;
+}
+
+.button-frt:hover{
+  color: #fff;
+  background: #000;
 }
 
 .button-sec{
-  background-color: #000;
+  color: #fff;
+  background: #000;
 }
 
-.button-sec > a{
-  color: #fff;
+.button-sec:hover{
+  color: #000;
+  background: #fff;
 }
 
 /*-- Meida Quiries --*/
@@ -300,15 +314,13 @@ button > a:hover{
     font-size: 0.4rem;
   }
 
-  button{
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin: 15px 0;
-    padding: 15px 0;
-  }
-
-  .probtn{
-    border: 1px solid #000;
+  .button-frt, .button-sec{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 20px;
   }
 
   .w-100 {
@@ -495,6 +507,7 @@ br{
   .mulher .box1{
     margin-bottom: 30px;
   }
+
 }
 
 /*--break--*/
@@ -731,6 +744,31 @@ br{
 .col-box{
   margin: 30px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
