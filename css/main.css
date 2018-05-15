@@ -423,7 +423,7 @@ br{
 .thum-image{
     width: 210px;
     height: 210px;
-    margin-left: 15px;
+    margin: 0 auto;
     position: relative;
     line-height: 108px;
     text-align: center;
@@ -494,16 +494,6 @@ br{
 
   .mulher .box1{
     margin-bottom: 30px;
-  }
-
-  .thum-image{
-    width: 210px;
-    height: 210px;
-    margin-left: 59px;
-    position: relative;
-    line-height: 108px;
-    text-align: center;
-    overflow: hidden;
   }
 }
 
